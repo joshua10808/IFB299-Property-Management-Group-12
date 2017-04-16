@@ -3,9 +3,14 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 #nav ul{
   display: flex;
   flex: 1;
+  height: 30px;
 }
 
 #nav ul li{
@@ -16,17 +21,54 @@
   text-align: center;
 }
 
+#nav ul li a{
+  display: block;
+  line-height: 29px;
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+}
+
+#nav ul li a:hover {
+  background-color: black;
+}
+
 #wrapper{
+  height: 100%;
   display: flex;
   flex: 1;
 }
 
 #side{
-  padding: 1%;
   flex: 1;
+  background-color: #d3d3d3;
 }
 
 #main{
-  padding: 1%;
   flex: 3;
+}
+
+#mainContentBanner{
+  padding: 50px;
+}
+
+#mainWrapper{
+  padding: 10px;
+}
+
+#sideWrapper{
+  padding: 10px;
+}
+
+#loginWrapper{
+  padding: 10px;
+}
+
+#loginWrapper form{
+  display: flex;
+  flex-direction: column;
+}
+
+#loginWrapper form input{
+  margin-top: 5px;
 }
