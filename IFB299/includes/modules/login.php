@@ -1,17 +1,16 @@
 <?php
 
-function userlogin($user, $password){
-  $db->where("user", $user);
-  $db->where("password", md5($password));
-  if($db->has("users")) {
-      $db->where("user", $user);
-      $db->where("password", md5($password));
-      $user = $db->$db->getOne ("users")
-      $_SESSION['id'] = user['id'];
-      return true;
-  } else {
-      return false;
-  }
-}
+function login($db, $user, $pass){
 
+  $db->where("username", $user);
+  $db->where("password", $pass);
+  $db->where("admin", "1");
+  $data = $db->get("users");
+  if($data != null) {
+      $_SESSION['userdata'] = $data;
+      return true;  
+  } 
+
+  return false;
+}
 ?>

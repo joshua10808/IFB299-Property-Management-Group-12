@@ -7,6 +7,8 @@ html, body {
   height: 100%;
 }
 
+#mainContentBanner h1 { color: #ffffff; font-family: 'Lato', sans-serif; font-size: 54px; font-weight: 300; }
+
 #nav ul{
   display: flex;
   flex: 1;
@@ -34,8 +36,9 @@ html, body {
 }
 
 #wrapper{
-  height: 100%;
+  min-height: 100%;
   display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -45,15 +48,24 @@ html, body {
 }
 
 #main{
-  flex: 3;
+  display: flex;
+  flex: 1;
 }
 
 #mainContentBanner{
-  padding: 50px;
+  background-image: url(/IFB299/img/banner.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
 #mainWrapper{
-  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 #sideWrapper{
@@ -62,6 +74,10 @@ html, body {
 
 #loginWrapper{
   padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #loginWrapper form{
@@ -71,4 +87,351 @@ html, body {
 
 #loginWrapper form input{
   margin-top: 5px;
+}
+
+#RegisterWrapper{
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#RegisterWrapper form{
+  display: flex;
+  flex-direction: column;
+}
+
+#RegisterWrapper form input{
+  margin-top: 5px;
+}
+
+#adminWrapper{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#adminSide{
+  flex: 1;
+  background-color: grey;
+}
+
+#adminContent{
+  flex: 3;
+}
+
+#adminDashboard{
+  padding: 20px;
+}
+
+#adminDashboard ul li {
+  list-style-type: none;
+}
+
+#adminAddProperty {
+  padding: 10px;
+}
+
+#adminAddProperty form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#adminAddProperty form input {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#selectSuburb {
+  margin-top: 10px !important;
+}
+
+#backToDash{
+  display: block;
+  padding: 10px 0;
+}
+
+#manageStaff{
+  padding: 10px;
+}
+
+#editstaffform{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+#editstaffform input{
+  margin: 5px;
+  padding: 5px; 
+}
+
+#deletestaffbutton{
+  margin: 5px;
+  padding: 5px; 
+}
+#mainItemWrapper{
+	text-align:center;
+}
+#propertyWrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+#propertyDetails{
+	text-align:center;
+}
+#propertyheader {
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+	font-weight:bold;
+	
+}
+#Rating{
+	float:right;
+	width:50%;
+}
+
+#propertyImage img {
+  width: 600px;
+}
+
+#propertyImageT img {
+  width: 600px;
+  height: 400px;
+}
+
+#propertyImageT{
+display: flex;
+    justify-content: center;
+}
+
+#tableShadow{
+    background-color:black;
+    z-index:0;
+}
+
+.alpha60 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+.alphaWhite60 {
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(255, 255, 255);
+    /* RGBa with 0.6 opacity */
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.20));
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#bannerShadow{
+  padding: 12px 20px;
+}
+
+#staffWrapper{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#staffSide{
+  flex: 1;
+  background-color: grey;
+}
+
+#staffContent{
+  flex: 3;
+}
+
+#staffDashboard{
+  padding: 20px;
+}
+
+#staffDashboard ul li {
+  list-style-type: none;
+}
+#tenantWrapper{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#tenantSide{
+  flex: 1;
+  background-color: grey;
+}
+
+#tenantContent{
+  flex: 3;
+}
+
+#tenantDashboard ul li {
+  list-style-type: none;
+}
+
+#mainTableHeader{
+    text-align: center;
+    padding: 10px;
+}
+
+.propertySection{
+  display: inline-flex;
+  padding: 5px;
+}
+
+.propertyKey{
+  padding-right: 10px;
+}
+
+.content_wrapper{
+    padding: 20px;
+}
+
+#module_title{
+    padding-bottom: 20px;
+}
+
+#inspection_booking{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#inspection_booking form{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#inspection_booking form input{
+	margin-bottom: 10px;
+    	padding: 5px;
+}
+
+#content_wrapper h1{
+    flex: 1;
+    align-items: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#viewProperties{
+ padding: 20px;
+}
+
+#viewProperties form{
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+#viewProperties form input{
+padding: 5px;
+margin: 10px;
+
+}
+
+#viewSchedule{
+padding: 20px;
+}
+
+#propertyTable_wrapper{
+    padding: 20px;
+}
+
+#registerForm {
+    display: none;
+    padding-top: 20px;
+
+}
+
+#infoTable{
+	display:inline-block;
+	border-collapse:collapse;
+	text-align:left;
+	padding-left:50px;
+	color:black;
+	border: solid 1px black ;
+	border-collapse:collapse;
+}	
+#mainItemWrapper{
+	text-align:center;
+}
+#propertyWrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+
+	width:50%;
+	float:left;
+}
+#propertyDetails{
+	text-align:center;
+}
+#propertyheader {
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+	font-weight:bold;
+	color:red;
+	
+}
+
+#ratingAndReview h1{
+	color:red;
+}
+#ratingAndReview{
+	float:right;
+	width:50%;
+	margin-top:35px;
+	padding-top:5px;
+	text-align:center;
+	color:black;
+}
+#enterReview{
+	margin-top:50px;
+	padding-left:50px;
+	padding-right:50px;
+	margin-left:40px;
+	
+}
+#reviewSubmit fieldset{
+	display:inline-block;
+	width:100%;
+}
+#review1, #review2,#noRating{
+	border:1px black solid;
+	display:inline-block;
+	
+	
 }
